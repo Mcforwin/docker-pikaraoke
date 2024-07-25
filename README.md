@@ -5,7 +5,7 @@ Docker container for the PiKaraoke project
 - copy files to a directory
 ```shell
 mkdir ~/docker-pikaraoke
-cd docker-pikaraoke
+cd ~/docker-pikaraoke
 git clone https://github.com/Laynezilla/docker-pikaraoke.git
 ```
 - build the image
