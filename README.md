@@ -9,7 +9,7 @@ git clone https://github.com/Laynezilla/docker-pikaraoke.git
 ```
 - build the image
 ```shell
-docker build -t pikaraoke .
+docker build -t pikaraoke ~/docker-pikaraoke/.
 ```
 - optional: create user to align file permissions between host and container
 ```shell
