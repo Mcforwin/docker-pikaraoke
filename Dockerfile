@@ -19,8 +19,6 @@ ENV LOG_LEVEL 20
 #ENV URL karaoke.test.tld
 #ENV ADMIN_PASSWORD secret
 
-COPY root /
-
 RUN apk add --no-cache --upgrade \
 	git=2.45.2-r0 \
 	build-base=0.5-r3 \
@@ -36,6 +34,8 @@ RUN apk add --no-cache --upgrade \
 WORKDIR $INSTALL_PATH
 
 RUN yes y | /bin/sh $INSTALL_PATH/setup.sh
+
+COPY root /
 
 EXPOSE $PORT $FFMPEG_PORT
 
