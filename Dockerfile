@@ -28,7 +28,7 @@ RUN apk add --no-cache --upgrade \
 	su-exec=0.2-r3 \
 	shadow=4.15.1-r0 && \
 	mkdir -m 755 $DOWNLOAD_PATH && \
-	git clone https://github.com/vicwomg/pikaraoke.git --branch 1.2 && \
+	git clone https://github.com/vicwomg/pikaraoke.git && \
 	chmod 755 /usr/local/bin/docker-entrypoint.sh
 
 WORKDIR $INSTALL_PATH
